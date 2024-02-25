@@ -13,6 +13,7 @@ module.exports = {
           owner: 'Lsnsh',
           name: 'first-electron-app',
         },
+        generateReleaseNotes: true,
         prerelease: false,
         draft: true,
       },

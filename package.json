@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "main": "main.js",
+  "repository": "https://github.com/Lsnsh/first-electron-app",
   "scripts": {
     "start": "electron-forge start",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -25,6 +26,7 @@
     "electron": "^29.0.1"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "update-electron-app": "^3.0.0"
   }
 }

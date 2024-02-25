@@ -1,5 +1,8 @@
 const { app, BrowserWindow, ipcMain } = require("electron")
 const path = require("path")
+const { updateElectronApp } = require('update-electron-app')
+
+updateElectronApp()
 
 const createWindow = () => {
   const win = new BrowserWindow({
@@ -19,8 +22,8 @@ const createWindow = () => {
 }
 
 app.whenReady().then(() => {
-  console.log("ready", `node: ${process.version}`)
-  // console.log('process.version', process.versions);
+  console.log("ready", `node: ${process.version}`, `project: ${process.env.npm_package_version}`)
+  // console.log('process.version', process.versions, process.env.npm_package_version);
 
   ipcMain.handle("ping", () => "pong")
   createWindow()

@@ -15,7 +15,7 @@ const createWindow = () => {
 
   // 在 MacOS 系统下的 VSCode 中启动调试后，关闭窗口后，第二次调用 createWindow 方法执行 win.loadFile 时窗口内容白屏，后续再关闭重新打开也一直时白屏
   // 在 MacOS 系统下的 VSCode 中刷新调试后，关闭窗口后，第二次调用 createWindow 方法执行 win.loadFile 时窗口内容正常，后续也正常
-  win.loadFile('index.html');
+  win.loadFile('./src/index.html');
   // win.loadURL("https://www.baidu.com")
 
   // console.log(`Current directory: ${process.cwd()}`)

@@ -7,11 +7,11 @@ const func = async () => {
   const response = await window.versions.ping();
   console.log(response); // 打印 'pong'
 
-  window.alert(`invoke ping response: ${response}`);
+  // window.alert(`invoke ping response: ${response}`);
 
-  // const message = document.createElement("p")
-  // message.innerHTML = `<p>response: ${response}</p>`
-  // information.appendChild(message)
+  const message = document.createElement("p")
+  message.innerHTML = `<p>Invoke ping response: ${response}</p>`
+  information.appendChild(message)
 };
 
 func();

@@ -25,6 +25,6 @@
    1. https://docs.npmjs.com/cli/v10/commands/npm-version
    2. https://stackoverflow.com/questions/44370727/how-to-call-npm-version-to-update-my-own-packages-version-and-then-commit
    3. https://docs.npmjs.com/updating-your-published-package-version-number
-8. Init updater failed -- Code Signing
+8. Uncaught Exception: Error: Could not get code signature for running application at initUpdater -- Code Signing
    1. https://www.electronjs.org/zh/docs/latest/tutorial/code-signing
    2. https://github.com/electron/electron/issues/7476

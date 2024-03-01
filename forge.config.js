@@ -4,6 +4,8 @@ const { FuseV1Options, FuseVersion } = require('@electron/fuses');
 module.exports = {
   packagerConfig: {
     asar: true,
+    // https://www.electronforge.io/guides/code-signing/code-signing-macos
+    osxSign: {},
   },
   publishers: [
     {

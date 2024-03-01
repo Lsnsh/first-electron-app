@@ -1,6 +1,6 @@
 {
   "name": "first-electron-app",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "src/main.js",
   "repository": "https://github.com/Lsnsh/first-electron-app",

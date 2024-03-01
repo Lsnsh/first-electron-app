@@ -28,3 +28,6 @@
 8. Uncaught Exception: Error: Could not get code signature for running application at initUpdater -- Code Signing
    1. https://www.electronjs.org/zh/docs/latest/tutorial/code-signing
    2. https://github.com/electron/electron/issues/7476
+9. Error: Could not find any Electron packages in devDependencies / `npm install` Electron output RequestError: read ETIMEDOUT / socket hang up
+   1.  https://www.electronjs.org/docs/latest/tutorial/installation#custom-mirrors-and-caches
+   2.  https://github.com/electron/electron-quick-start/issues/626

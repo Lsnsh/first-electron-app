@@ -1,6 +1,29 @@
-## first-electron-app
+# My first Electron application
 
-### Issues history
+我的第一个 [Electron][0] 应用程序，不断学习和实践官方文档中的示例和功能，并记录过程中遇到的问题。
+
+My first [Electron][0] application, constantly learning and practicing the examples and features in official documentation, and documenting any issues encountered during the process.
+
+## Done List
+
+已实践和学习过的部分，在这里记录，点击链接可查看期间遇到过的问题。
+
+Record the parts that have been practiced and learned here, and click the link to view the problems encountered during this period.
+
+- [教程 / Tutorial](#tutorial)
+
+## Record the problems encountered
+
+记录实践学习中遇到的问题，并留下可行的问题解决方案的相关链接，随时推移相关链接可能会发生变化。
+
+Record the problems encountered in practical learning and leave relevant links for feasible problem-solving solutions. Relevant links may change as time goes by.
+
+### Tutorial
+
+> https://www.electronjs.org/zh/docs/latest/tutorial/tutorial-prerequisites
+> https://www.electronjs.org/docs/latest/tutorial/tutorial-prerequisites
+> 
+> Last updated: 2024/03/01
 
 1. Error: Cannot find module '@electron-forge/plugin-fuses'
    1. https://www.electronforge.io/config/plugins/fuses
@@ -31,3 +54,6 @@
 9. Error: Could not find any Electron packages in devDependencies / `npm install` Electron output RequestError: read ETIMEDOUT / socket hang up
    1.  https://www.electronjs.org/docs/latest/tutorial/installation#custom-mirrors-and-caches
    2.  https://github.com/electron/electron-quick-start/issues/626
+
+
+[0]: https://electronjs.org/

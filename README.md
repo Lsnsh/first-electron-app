@@ -11,6 +11,7 @@ My first [Electron][0] application, constantly learning and practicing the examp
 Record the parts that have been practiced and learned here, and click the link to view the problems encountered during this period.
 
 - [教程 / Tutorial](#tutorial)
+- [Electron 中的进程 / Processes in Electron](#processes-in-electron)
 
 ## Record the problems encountered
 
@@ -18,12 +19,20 @@ Record the parts that have been practiced and learned here, and click the link t
 
 Record the problems encountered in practical learning and leave relevant links for feasible problem-solving solutions. Relevant links may change as time goes by.
 
+
+### Processes in Electron
+
+> https://www.electronjs.org/zh/docs/latest/tutorial/process-model
+> https://www.electronjs.org/docs/latest/tutorial/process-model
+> 
+> Last updated: 2024/03/05
+
 ### Tutorial
 
 > https://www.electronjs.org/zh/docs/latest/tutorial/tutorial-prerequisites
 > https://www.electronjs.org/docs/latest/tutorial/tutorial-prerequisites
 > 
-> Last updated: 2024/03/01
+> Last updated: 2024/03/05
 
 1. Error: Cannot find module '@electron-forge/plugin-fuses'
    1. https://www.electronforge.io/config/plugins/fuses

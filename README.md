@@ -54,6 +54,12 @@ Record the problems encountered in practical learning and leave relevant links f
 9. Error: Could not find any Electron packages in devDependencies / `npm install` Electron output RequestError: read ETIMEDOUT / socket hang up
    1.  https://www.electronjs.org/docs/latest/tutorial/installation#custom-mirrors-and-caches
    2.  https://github.com/electron/electron-quick-start/issues/626
+10. Notarize debugger log: An unhandled rejection has occurred inside Forge:  SyntaxError: Unexpected end of JSON input
+    1.  https://github.com/electron/notarize/issues/143
+    2.  https://github.com/electron/forge/issues/3403
+    3.  https://developer.apple.com/forums/thread/657090
+    4.  https://mp.apipost.cn/a/4b137555c8bdbc05
+    5.  https://stackoverflow.com/questions/74456693/electron-forge-an-unhandled-rejection-has-occurred-inside-forge-object-objec
 
 
 [0]: https://electronjs.org/

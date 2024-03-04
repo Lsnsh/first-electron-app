@@ -1,6 +1,6 @@
 {
   "name": "first-electron-app",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "My first Electron application, constantly practicing and learning the examples and features in official documents, and documenting any issues encountered during the process",
   "main": "src/main.js",
   "repository": "https://github.com/Lsnsh/first-electron-app",

@@ -34,6 +34,10 @@ const createChildWindow = (parent, folderPath = '', title = '') => {
 
 const handleIPCChannelMessage = () => {
   ipcMain.handle('ping', () => 'pong');
+  ipcMain.handle('check-update', () => {
+    updateElectronApp();
+    return new Date().getTime();
+  });
 
   ipcMain.on('show-ipc-demo', (event, title) => {
     const webContents = event.sender;

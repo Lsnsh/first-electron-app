@@ -11,5 +11,6 @@ contextBridge.exposeInMainWorld('versions', {
 });
 
 contextBridge.exposeInMainWorld('electronAPI', {
+  checkUpdate: () => ipcRenderer.invoke('check-update'),
   showIPCDemo: (title) => ipcRenderer.send('show-ipc-demo', title),
 });

@@ -1,14 +1,16 @@
-# My first Electron application
+# Electron examples desktop application
 
-我的第一个 [Electron][0] 应用程序，不断学习和实践官方文档中的示例和功能，并记录过程中遇到的问题。
+Available on: macOS
 
-My first [Electron][0] application, constantly learning and practicing the examples and features in official documentation, and documenting any issues encountered during the process.
+这是一个 [Electron][0] 示例应用，用于展示框架的能力，也我的第一个 Electron 应用程序，不断学习和实践官方文档中的示例和功能，并记录过程中遇到的问题。
+
+This is an [Electron][0] example application used to demonstrate the framework's capabilities, which is also my first Electron application, constantly learning and practicing the examples and features in official documentation, and documenting any issues encountered during the process.
 
 ## Done List
 
-已实践和学习过的部分，在这里记录，点击链接可查看期间遇到过的问题。
+已完成的部分，在这里记录，点击链接可查看期间遇到过的问题。
 
-Record the parts that have been practiced and learned here, and click the link to view the problems encountered during this period.
+Record the parts that have been done here, and click the link to view the problems encountered during this period.
 
 - [教程 / Tutorial](#tutorial)
 - [Electron 中的进程 / Processes in Electron](#processes-in-electron)

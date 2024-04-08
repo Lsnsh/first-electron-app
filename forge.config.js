@@ -8,9 +8,15 @@ module.exports = {
     osxSign: {},
     osxNotarize: {
       tool: 'notarytool',
-      appleId: process.env.APPLE_ID,
-      appleIdPassword: process.env.APPLE_ID_PASSWORD,
-      teamId: process.env.APPLE_TEAM_ID,
+      // Option 1: Using an app-specific password
+      // appleId: process.env.APPLE_ID,
+      // appleIdPassword: process.env.APPLE_ID_PASSWORD,
+      // teamId: process.env.APPLE_TEAM_ID,
+
+      // Option 2: Using an App Store Connect API key
+      appleApiKey: process.env.APPLE_API_KEY,
+      appleApiKeyId: process.env.APPLE_API_KEY_ID,
+      appleApiIssuer: process.env.APPLE_API_ISSUER
     },
   },
   publishers: [

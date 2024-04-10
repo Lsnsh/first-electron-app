@@ -2,7 +2,7 @@ const OSS = require('ali-oss');
 const path = require('path');
 const fs = require('fs');
 
-const BUILD_OUT_DIR = 'out';
+const BUILD_OUT_DIR = 'out/make';
 const ALI_OSS_RELEASE_PATH = process.env.ALI_OSS_RELEASE_PATH;
 const VERSION_TAG = 'v' + process.env.VERSION;
 

@@ -5,8 +5,6 @@ name: Build Electron App
 
 on:
   workflow_dispatch:
-  pull_request:
-    branches: [$default-branch]
 
 jobs:
   build:

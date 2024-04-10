@@ -5,6 +5,8 @@ name: Build Electron App
 
 on:
   workflow_dispatch:
+  push:
+    tags: '*'
 
 jobs:
   build:
@@ -58,3 +60,18 @@ jobs:
           APPLE_API_KEY_ID: ${{ secrets.APPLE_API_KEY_ID }}
           APPLE_API_ISSUER: ${{ secrets.APPLE_API_ISSUER }}
         run: npm run publish --if-present
+      - name: Upload to Cloud Storage
+        if: ${{ startsWith(github.ref, 'refs/tags/') }}
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          echo "Current version: $VERSION"
+          npm i ali-oss
+          node ./scripts/upload-oss.js
+        env:
+          ALI_OSS_REGION: ${{ vars.dev.ALI_OSS_REGION }}
+          ALI_OSS_ACCESS_KEY_ID: ${{ secrets.ALI_OSS_ACCESS_KEY_ID }}
+          ALI_OSS_ACCESS_KEY_SECRET: ${{ secrets.ALI_OSS_ACCESS_KEY_SECRET }}
+          ALI_OSS_BUCKET: ${{ vars.dev.ALI_OSS_BUCKET }}
+          ALI_OSS_ENDPOINT: ${{ vars.dev.ALI_OSS_ENDPOINT }}
+          ALI_OSS_RELEASE_PATH: ${{ vars.dev.ALI_OSS_RELEASE_PATH }}
+        shell: bash

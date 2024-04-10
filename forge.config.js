@@ -16,7 +16,7 @@ module.exports = {
       // Option 2: Using an App Store Connect API key
       appleApiKey: process.env.APPLE_API_KEY,
       appleApiKeyId: process.env.APPLE_API_KEY_ID,
-      appleApiIssuer: process.env.APPLE_API_ISSUER
+      appleApiIssuer: process.env.APPLE_API_ISSUER,
     },
   },
   publishers: [
@@ -36,20 +36,16 @@ module.exports = {
   rebuildConfig: {},
   makers: [
     {
+      name: '@electron-forge/maker-dmg',
+      config: {},
+    },
+    {
       name: '@electron-forge/maker-squirrel',
       config: {},
     },
     {
       name: '@electron-forge/maker-zip',
       platforms: ['darwin'],
-    },
-    {
-      name: '@electron-forge/maker-deb',
-      config: {},
-    },
-    {
-      name: '@electron-forge/maker-rpm',
-      config: {},
     },
   ],
   plugins: [
